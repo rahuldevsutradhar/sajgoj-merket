@@ -1,13 +1,15 @@
 import React from 'react'
 import Container from '../component/Container'
 import Flex from '../component/Flex'
-import Navbar from '../../layout/Navbar'
-import Menubar from '../../layout/Menubar'
-import Footer from '../../layout/Footer'
+import "slick-carousel/slick/slick.css";
+import Slider from "react-slick";
+import BannerSlider from '../component/BannerSlider';
+
 const Home = () => {
   return (
     <section>
-       
+      <BannerSlider/>
+
     </section>
   )
 }

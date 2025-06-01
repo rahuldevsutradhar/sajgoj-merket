@@ -12,6 +12,9 @@ import Login from './assets/pages/Login';
 import Product from './assets/pages/Product';
 import Error from './assets/pages/Error';
 import RootLayout from './assets/component/RootLayout';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
