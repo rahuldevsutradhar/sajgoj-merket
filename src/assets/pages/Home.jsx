@@ -7,9 +7,7 @@ import Footer from '../../layout/Footer'
 const Home = () => {
   return (
     <section>
-        <Navbar/>
-        <Menubar/>
-        <Footer/>
+       
     </section>
   )
 }

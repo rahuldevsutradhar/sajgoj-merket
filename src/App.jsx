@@ -11,17 +11,20 @@ import CheckOut from './assets/pages/CheckOut';
 import Login from './assets/pages/Login';
 import Product from './assets/pages/Product';
 import Error from './assets/pages/Error';
+import RootLayout from './assets/component/RootLayout';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-    <Route path="/" element={<Home />} >   </Route>
-    <Route path="/shop" element={<Shop />} >   </Route>
-    <Route path="/product" element={<Product />} >   </Route>
-    <Route path="/cart" element={<Cart />} >   </Route>
-    <Route path="/checkOut" element={<CheckOut />} >   </Route>
-    <Route path="/login" element={<Login />} >   </Route>
-    <Route path="/*" element={<Error />} >   </Route>
+    <Route path="/" element={<RootLayout/>}>
+           <Route path="" element={<Home />} />  
+           <Route path="/shop" element={<Shop />} />   
+           <Route path="/product" element={<Product />}/>  
+           <Route path="/cart" element={<Cart />} />   
+           <Route path="/checkOut" element={<CheckOut />} />   
+           <Route path="/login" element={<Login />} />   
+           <Route path="/*" element={<Error />} />   
+    </Route>
     </>
   )
 );
