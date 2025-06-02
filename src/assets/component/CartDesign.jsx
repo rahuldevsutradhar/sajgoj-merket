@@ -11,7 +11,12 @@ const CartDesign = ({text,src,title,price,discountPrice,quantity}) => {
       <p className='inline-block bg-one text-white py-1 px-1 rounded-full
        font-mon font-normal text-xs
       top-29 left-0'>{text}OFF</p>
-      <Link to={'/details'}><Image src={src} className='w-full relative h-[306px] pb-4'/></Link>
+      <div className="overflow-hidden">
+        <Link to="/details">
+          <Image src={src}className="w-full h-[306px] pb-4 transition-transform 
+          duration-700 ease-in-out hover:scale-125"/>
+        </Link>
+      </div>
       
       <UnoderTitle text={title}
       className='w-[178px] h-[33px] text-center mx-auto '/>
