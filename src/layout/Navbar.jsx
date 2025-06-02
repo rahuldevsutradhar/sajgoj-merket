@@ -5,6 +5,7 @@ import Image from '../assets/component/Image';
 import logo from '../assets/logo.png';
 import { FaSearch, FaShoppingBag } from "react-icons/fa";
 import ButtonOne from '../assets/component/ButtonOne';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
       <Container>
         <Flex className="items-center justify-between">
           <div className="w-4/12 flex items-center gap-x-6">
-            <Image src={logo} className="w-[168px] h-[22px] mt-2" />
+            <Link to={''}><Image src={logo} className="w-[168px] h-[22px] mt-2" /></Link>
             <h1 className="text-md font-semibold mt-2">BRANDS</h1>
           </div>
 
