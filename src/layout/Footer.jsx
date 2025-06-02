@@ -13,7 +13,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <section className='mt-3 bg-[#192038]  py-10'> 
+    <section className=' bg-[#192038]  py-10'> 
       <Container>
         <Flex className=''>
           <div className='w-2/12 my-3  '>
