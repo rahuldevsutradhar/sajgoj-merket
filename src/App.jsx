@@ -14,6 +14,7 @@ import Error from './assets/pages/Error';
 import RootLayout from './assets/component/RootLayout';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Details from './assets/pages/Details';
 
 
 const router = createBrowserRouter(
@@ -22,7 +23,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout/>}>
            <Route path="" element={<Home />} />  
            <Route path="/shop" element={<Shop />} />   
-           <Route path="/product" element={<Product />}/>  
+           <Route path="/details" element={<Details />}/>  
            <Route path="/cart" element={<Cart />} />   
            <Route path="/checkOut" element={<CheckOut />} />   
            <Route path="/login" element={<Login />} />   
