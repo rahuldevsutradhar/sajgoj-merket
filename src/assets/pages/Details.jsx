@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Container from '../component/Container';
 import Flex from '../component/Flex';
 import ButtonOne from '../component/ButtonOne';
-import { FaCheckCircle, FaHeadphones, FaHeart, FaLock } from 'react-icons/fa';
+import { FaCheckCircle, FaFacebook, FaHeadphones, FaHeart, FaLinkedin, FaLock } from 'react-icons/fa';
+import ProductGallery from '../component/ProductGallery';
+import { IoLogoWhatsapp } from 'react-icons/io';
 
 const Details = () => {
   const [quantity, setQuantity] = useState(1);
@@ -14,7 +16,14 @@ const Details = () => {
     <section className='my-[70px]'>
       <Container>
         <Flex>
-          <div className='w-7/12'>hihei</div>
+          <div className='w-7/12'>
+          <ProductGallery/>
+          <ul className='flex w-[30px] h-[30px] gap-x-4 mx-auto mt-5 '>
+            <li><FaFacebook /></li>
+            <li><FaLinkedin /> </li>
+            <li><IoLogoWhatsapp  /> </li>
+          </ul>
+          </div>
 
           <div className='w-5/12'>
             <h1 className='font-mon text-lg font-normal leading-[20px]'>
