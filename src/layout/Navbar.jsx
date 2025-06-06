@@ -29,7 +29,7 @@ const Navbar = () => {
          
           <div className="w-4/12 flex items-center justify-end gap-3 mt-1">
             <ButtonOne text="WISHLIST" className='bg-two text-white font-semibold'/>
-            <ButtonOne text="LOGIN" className='bg-three text-black font-medium hover:text-one duration-500'/>
+            <Link to={'/login'}><ButtonOne text="LOGIN" className='bg-three text-black font-medium hover:text-one duration-500'/></Link>
             <div className='relative'>
               <ButtonOne text="BAG" className='px-8 bg-four text-white font-semibold flex item-center gap-1 '
             /><FaShoppingBag className="absolute top-3 left-2 transfrom-1/2  text-sm text-white " />
