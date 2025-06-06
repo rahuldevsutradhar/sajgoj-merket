@@ -12,12 +12,12 @@ const ProductGallery = () => {
 
   return (
     <div className="max-w-xl mx-auto">
-      {/* Main Image */}
+     
       <div className="w-full  rounded-lg overflow-hidden mb-4">
         <img src={mainImage} alt="Main Product" className="w-full h-auto object-contain duration-700" />
       </div>
 
-      {/* Thumbnails */}
+      
       <div className="flex gap-4 justify-center">
         {images.map((img, index) => (
           <img
