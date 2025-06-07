@@ -9,12 +9,12 @@ const Login = () => {
   return (
     <section className='pb-[30px] pt-[20px]'>
       <Container>
-        <Flex className='border p-6 w-[900px] h-[450px] mx-auto items-center'>
-          <Image src={login} className='w-[450px] h-[445px]'/>
-          <div>
-            <p className='font-mon font-semibold text-center text-md'>Login</p>
+        <Flex className='border  md:p-6 w-[360px] md:w-[900px] h-[253px] md:h-[450px] mx-auto  md:items-center '>
+          <Image src={login} className='hidden md:inline md:w-[450px] md:h-[445px]'/>
+          <div className='mx-9 md:mx-0 my-auto md:my-0'>
+            <p className='font-mon font-semibold text-center  text-base md:text-md'>Login</p>
             <input type="text" placeholder='Phone Number'
-            className='py-2 px-4 w-[412px] border rounded-lg mb-5 mt-5'/>
+            className='py-2 px-2 md:px-4 w-[300px]  md:w-[412px] border rounded-lg mb-5 mt-5'/>
             <ButtonOne text='Login with OTP' className='bg-black text-white text-center'/>
           </div>
         </Flex>
