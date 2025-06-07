@@ -32,7 +32,7 @@ const BannerSlider = () => {
       {banners.map((banner, index) => (
         <div key={index}>
           <Link to="/shop">
-            <Image src={banner} className="w-full" />
+            <Image src={banner} className="w-full h-[200px] sm:h-[300px] md:h-auto" />
           </Link>
         </div>
       ))}

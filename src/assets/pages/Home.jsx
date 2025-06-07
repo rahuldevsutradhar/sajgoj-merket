@@ -46,57 +46,57 @@ const Home = () => {
     <section>
       <BannerSlider/>
       <Container>
-         <Link to={'/shop'}> <Image src={add} className='my-[30px]'/></Link>
-        <p className='font-mon font-bold text-bold text-xs text-center'>DEALS YOU CANNOT MISS</p>
-        <Flex className='mt-2 mb-6 justify-between'>
-          <Link to={'/shop'}><Image src={product1} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product2} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product3} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product4} className='w-[283px] h-[283px]'/></Link>         
+         <Link to={'/shop'}> <Image src={add} className='my-[30px] px-4 md:px-0'/></Link>
+        <p className='font-mon font-bold  text-xs sm:text-base md:text-lg text-center'>DEALS YOU CANNOT MISS</p>
+        <Flex className='mt-2 mb-6 justify-between flex-wrap gap-y-2 px-2 md:px-0'>
+          <Link to={'/shop'}><Image src={product1} className='w-[177px] sm:w-[307px] md:w-[283px] sm:h-[307px] h-[177px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product2} className='w-[177px] sm:w-[307px] md:w-[283px] sm:h-[307px] h-[177px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product3} className='w-[177px] sm:w-[307px] md:w-[283px] sm:h-[307px] h-[177px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product4} className='w-[177px] sm:w-[307px] md:w-[283px] sm:h-[307px] h-[177px] md:h-[283px]'/></Link>         
         </Flex>
 
-        <p className='font-mon font-bold text-bold text-xs text-center'>TOP BRANDS & OFFERS</p>
-        <Flex className='mt-2 mb-6 justify-between flex-wrap gap-y-4'>
-          <Link to={'/shop'}><Image src={product5} className='w-[381px] h-[167px]'/></Link>
-          <Link to={'/shop'}><Image src={product6} className='w-[381px] h-[167px]'/></Link>
-          <Link to={'/shop'}><Image src={product7} className='w-[381px] h-[167px]'/></Link>
-          <Link to={'/shop'}><Image src={product8} className='w-[381px] h-[167px]'/></Link>         
-          <Link to={'/shop'}><Image src={product9} className='w-[381px] h-[167px]'/></Link>         
-          <Link to={'/shop'}><Image src={product10} className='w-[381px] h-[167px]'/></Link>         
+        <p className='font-mon font-bold text-bold text-xs sm:text-base md:text-lg text-center'>TOP BRANDS & OFFERS</p>
+        <Flex className='mt-2 mb-6 justify-between flex-wrap gap-y-4 px-2 md:px-0'>
+          <Link to={'/shop'}><Image src={product5} className='md:w-[381px] sm:w-[305px] h-[167px]'/></Link>
+          <Link to={'/shop'}><Image src={product6} className='md:w-[381px] sm:w-[305px] h-[167px]'/></Link>
+          <Link to={'/shop'}><Image src={product7} className='md:w-[381px] sm:w-[305px] h-[167px]'/></Link>
+          <Link to={'/shop'}><Image src={product8} className='md:w-[381px] sm:w-[305px] h-[167px]'/></Link>         
+          <Link to={'/shop'}><Image src={product9} className='md:w-[381px] sm:w-[305px] h-[167px]'/></Link>         
+          <Link to={'/shop'}><Image src={product10} className='md:w-[381px] sm:w-[305px] h-[167px]'/></Link>         
         </Flex>
 
-        <p className='font-mon font-bold text-bold text-xs text-center'>LIMITED TIME OFFERS</p>
-        <Flex className='mt-2 mb-6 justify-between'>
-          <Link to={'/shop'}><Image src={product11} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product12} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product13} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product14} className='w-[283px] h-[283px]'/></Link>         
+        <p className='font-mon font-bold text-bold text-xs sm:text-base md:text-lg text-center'>LIMITED TIME OFFERS</p>
+        <Flex className='mt-2 mb-6 justify-between flex-wrap px-2 md:px-0 gap-y-2'>
+          <Link to={'/shop'}><Image src={product11} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product12} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product13} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product14} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>         
         </Flex>
 
-        <p className='font-mon font-bold text-bold text-xs text-center'>SHOP BEAUTY PRODUCTS BY CATEGORY</p>
-        <Flex className='mt-2 mb-6 justify-between flex-wrap gap-y-4'>
-          <Link to={'/shop'}><Image src={product15} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product16} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product17} className='w-[283px] h-[283px]'/></Link>
-          <Link to={'/shop'}><Image src={product18} className='w-[283px] h-[283px]'/></Link>         
-          <Link to={'/shop'}><Image src={product19} className='w-[283px] h-[283px]'/></Link>         
-          <Link to={'/shop'}><Image src={product20} className='w-[283px] h-[283px]'/></Link>         
-          <Link to={'/shop'}><Image src={product21} className='w-[283px] h-[283px]'/></Link>         
-          <Link to={'/shop'}><Image src={product22} className='w-[283px] h-[283px]'/></Link>         
+        <p className='font-mon font-bold text-bold text-xs sm:text-base md:text-lg text-center'>SHOP BEAUTY PRODUCTS BY CATEGORY</p>
+        <Flex className='mt-2 mb-6 justify-between flex-wrap gap-y-4 px-2 md:px-0 '>
+          <Link to={'/shop'}><Image src={product15} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product16} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product17} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>
+          <Link to={'/shop'}><Image src={product18} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>         
+          <Link to={'/shop'}><Image src={product19} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>         
+          <Link to={'/shop'}><Image src={product20} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>         
+          <Link to={'/shop'}><Image src={product21} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>         
+          <Link to={'/shop'}><Image src={product22} className='w-[177px] sm:w-[305px] md:w-[283px] h-[177px] sm:h-[250px] md:h-[283px]'/></Link>         
         </Flex>
 
-        <p className='font-mon font-bold text-bold text-xs text-center'>SHOP BY CONCERN</p>
-        <Flex className='mt-2 mb-6 justify-between flex-wrap gap-y-4'>
-          <Link to={'/shop'}><Image src={product23} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product24} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product25} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product26} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product27} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product28} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product29} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product30} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product31} className='w-[224px] h-[224px]'/></Link>
-          <Link to={'/shop'}><Image src={product32} className='w-[224px] h-[224px]'/></Link>
+        <p className='font-mon font-bold text-bold text-xs sm:text-base md:text-lg text-center'>SHOP BY CONCERN</p>
+        <Flex className='mt-2 mb-6 justify-between flex-wrap gap-y-4 px-2 md:px-0'>
+          <Link to={'/shop'}><Image src={product23} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product24} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product25} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product26} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product27} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product28} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product29} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product30} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product31} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
+          <Link to={'/shop'}><Image src={product32} className='w-[177px] sm:w-[307px] md:w-[224px] h-[177px] sm:h-[273px] md:h-[224px]'/></Link>
         </Flex>
       </Container>
       <Image src={offer} className='bg-[#6B21A8]'/>

@@ -13,9 +13,9 @@ const Error = () => {
         <Flex className='items-center '>
           <Image src={error} className='hidden md:inline'/>
           <div>
-            <h1 className='font-bold font-mon text-[20px] text-center md:text-left md:text-[32px]'>UH OH! You are lost.</h1>
-            <p className='font-mon md:mb-3 mb-4 mt-4 md:mt-0 px-4 text-[#b0b2b3]'>The page you are looking for does not exist. Click the button below to go back to the homepage.</p>
-            <Flex className='gap-x-4 pl-22 md:pl-0 mb-4 md:mb-0'>
+            <h1 className='font-bold font-mon text-[20px] text-center md:text-left sm:text-[28px] md:text-[32px]'>UH OH! You are lost.</h1>
+            <p className='font-mon md:mb-3 mb-4 sm:text-center md:text-left mt-4 md:mt-0 px-4 md:px-0 text-[#b0b2b3]'>The page you are looking for does not exist. Click the button below to go back to the homepage.</p>
+            <Flex className='gap-x-4 pl-22 sm:pl-60 md:pl-0 mb-4 sm:mb-6 md:mb-0'>
               <Link to={'/'}><ButtonOne text='Home'
               className='border-4 border-one  text-black hover:bg-one hover:text-white duration-500'/></Link>
               <Link to={'/shop'}><ButtonOne text='Shop'
