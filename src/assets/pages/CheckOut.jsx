@@ -10,13 +10,10 @@ const CheckOut = () => {
   const handleToggleCoupon = () => {
     setVisible(!isVisible);
   };
-
-  
-
   return (
     <section className='my-[50px]'>
       <Container>
-        <div className='bg-[#d9edf7] py-2 px-5 w-full mb-5'>
+        <div className='bg-[#d9edf7] py-2 px-5 ml-2 md:ml-0 mr-2 md:mr-0  w-auto md:w-full mb-5'>
           <h1 className='text-md font-mon text-black'>
             Returning Customer?
             <Link to={'/login'}>
@@ -26,14 +23,18 @@ const CheckOut = () => {
         </div>
 
         <div>
-          <h1 className='text-md font-mon text-black'>BILLING & SHIPPING</h1>
+          <h1 className='text-md font-mon text-black mx-2 md:mx-0'>BILLING & SHIPPING</h1>
         </div>
 
-        <Flex className='mt-5 items-start'>
-          <div className='w-1/2 flex flex-wrap gap-x-3 gap-y-3'>
-            <input type="text" placeholder='Name' className='py-0 px-6 border border-five rounded-2xl' />
-            <input type="text" placeholder='Phone' className='py-0 px-6 border border-five rounded-2xl' />
-            <select className='py-2 px-6 border border-five rounded-2xl w-[231px]'>
+        <Flex className='flex-col md:flex-row mt-5 items-start mx-2 md:mx-0'>
+          <div className="w-full md:w-1/2 flex flex-wrap gap-4">
+            <input type="text" placeholder="Name"
+              className="w-full md:w-[48%] py-2 px-4 border border-five rounded-2xl" />
+            <input type="text" placeholder="Phone"
+              className="w-full md:w-[48%] py-2 px-4 border border-five rounded-2xl"
+            />
+
+            <select className="w-full md:w-[48%] py-2 px-4 border border-five rounded-2xl">
               <option value="">Select city</option>
               <option value="">Dhaka</option>
               <option value="">Bogura</option>
@@ -41,30 +42,35 @@ const CheckOut = () => {
               <option value="">Rangpur</option>
               <option value="">Khulna</option>
             </select>
-            <select className='py-2 px-6 border border-five rounded-2xl w-[231px]'>
+
+            <select className="w-full md:w-[48%] py-2 px-4 border border-five rounded-2xl">
               <option value="">Select Area</option>
               <option value="">1</option>
               <option value="">2</option>
               <option value="">3</option>
             </select>
-            <input type="text" placeholder='Address' className='py-2 px-6 border border-five rounded-2xl' />
-            <input type="email" placeholder='Email (Optional)' className='py-2 px-6 border border-five rounded-2xl' />
-            <input type="text" placeholder='Order Note (optional)' className='py-2 px-6 border border-five rounded-2xl pb-5 w-[473px]' />
+
+            <input type="text" placeholder="Address"
+              className="w-full md:w-[48%] py-2 px-4 border border-five rounded-2xl" />
+            <input type="email" placeholder="Email (Optional)"
+              className="w-full md:w-[48%] py-2 px-4 border border-five rounded-2xl" />
+            <input type="text" placeholder="Order Note (Optional)"
+              className="w-full  py-4 px-4 mr-0 md:mr-2 border border-five rounded-2xl" />
           </div>
 
-          <div className='w-1/2 pl-3 border-l'>
-            <ButtonOne
-              onClick={handleToggleCoupon}
-              className="text-one text-lg font-mon"
-              text="Have Coupon / Voucher?"
-            />
+
+          <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
+            <div className="w-full flex pl-2 md:pl-[55px] mb-4">
+              <ButtonOne onClick={handleToggleCoupon}
+                className="text-one text-sm font-mon"
+                text="Have Coupon / Voucher?"/>
+            </div>
+
             {isVisible && (
               <Flex className="gap-x-4 items-center">
-                <input
-                  type="text"
-                  placeholder="Coupon code"
-                  className="px-4 py-2 w-full font-mon text-gray-600 border rounded-lg"
-                />
+                <input type="text" placeholder="Coupon code"
+                  className="px-4 py-2 w-full font-mon text-gray-600 border rounded-lg" />
+
                 <ButtonOne text="Apply" className="bg-one text-white px-4 py-2 rounded" />
               </Flex>
             )}

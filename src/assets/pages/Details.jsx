@@ -96,7 +96,7 @@ const Details = () => {
             <p className='text-sm font-mon mb-6'>Only <span className='text-one'>1</span> item left in stock</p>
 
             <div className='flex gap-x-6 text-mon items-top text-five'>
-              <h2 className="text-base md:text-lg pr-12 md:pr-0 font-semibold mb-2 sm:mb-0">Brief Description</h2>
+              <h2 className="text-base md:text-lg pr-12 sm:pr-2 md:pr-0 font-semibold mb-2 sm:mb-0">Brief Description</h2>
               <div className='mb-6'>
                 <ul className="list-disc list-inside text-base md:text-xs gap-y-2 flex flex-col">
                   <li>Increase hair growth.</li>
