@@ -8,7 +8,7 @@ const Menubar = () => {
   return (
      <section className='my-3'>
         <Container>
-            <Flex className='gap-x-4 items-center'>
+            <Flex className='hidden md:flex gap-x-4 items-center'>
                 <div className='w-5/12 flex justify-between'>
                 <UnoderTitle text='Makeup'/>
                 <UnoderTitle text='Skin'/>
