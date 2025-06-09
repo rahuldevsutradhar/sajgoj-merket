@@ -7,7 +7,7 @@ import img5 from '../img-5.jpg';
 import img6 from '../img-6.jpg';
 
 const ProductGallery = () => {
-  const images = [img1, img2, img3, img4, img5, img6];
+  const images = [img1, img2, img3, img4, ];
   const [mainImage, setMainImage] = useState(images[0]);
 
   return (
@@ -18,7 +18,7 @@ const ProductGallery = () => {
       </div>
 
       
-      <div className="flex gap-4 justify-center">
+      <div className="flex gap-0 md:gap-4 justify-center">
         {images.map((img, index) => (
           <img
             key={index}

@@ -38,7 +38,7 @@ const Details = () => {
                   <span className='font-mon pb-2 text-sm text-black'>Total price</span>
                   ৳ 139.00
                 </div>
-                <ButtonOne text='Add to card' className='bg-one inline-block text-white ' />
+                <ButtonOne text='Add to card' className='bg-one inline-block text-white py-2 mt-2' />
 
               </div>
 
@@ -91,7 +91,7 @@ const Details = () => {
                 <span className="px-4 py-2">{quantity}</span>
                 <ButtonOne onClick={decrement} text='+' className='px-3 py-2 text-lg font-bold' />
               </div>
-              <ButtonOne text='ADD TO CART' className='bg-one text-white px-6 py-2 rounded-lg' />
+              <ButtonOne text='ADD TO CART' className='bg-one text-white text-center px-6 py-2 font-xs md:font-md rounded-lg' />
             </div>
             <p className='text-sm font-mon mb-6'>Only <span className='text-one'>1</span> item left in stock</p>
 
@@ -172,11 +172,11 @@ const Details = () => {
 
         </div>
         <div className="mt-8 flex justify-between px-2 md:px-70 ">
-          <ButtonOne text="Description" className="bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500" />
-          <ButtonOne text="Ingredients" className="hidden sm:inline-block md:inline-block bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500" />
-          <ButtonOne text="How To Use" className="hidden sm:inline-block md:inline-block bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500" />
-          <ButtonOne text="Reviews (64)" className="bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500" />
-          <ButtonOne text="Q&A (17)" className="bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500" />
+          <ButtonOne text="Description" className="bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500 py-2 md:py-0" />
+          <ButtonOne text="Ingredients" className="hidden sm:inline-block md:inline-block bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500 py-2 md:py-0" />
+          <ButtonOne text="How To Use" className="hidden sm:inline-block md:inline-block bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500 py-2 md:py-0" />
+          <ButtonOne text="Reviews (64)" className="bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500 py-2 md:py-0" />
+          <ButtonOne text="Q&A (17)" className="bg-[#e5e7ef] text-black hover:text-white hover:bg-one duration-500 py-2 md:py-0" />
         </div>
 
       </Container>
