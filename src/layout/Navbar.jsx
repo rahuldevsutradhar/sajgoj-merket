@@ -57,10 +57,10 @@ const Navbar = () => {
             <Link to={'/login'}>
               <ButtonOne text="LOGIN" className='hidden md:flex bg-three text-black font-medium hover:text-one duration-500' />
             </Link>
-            <div className='relative'>
+            <div className='relative flex items-center'>
               <ButtonOne text="BAG" className='hidden md:flex px-8 bg-four text-white font-semibold flex item-center gap-1 ' />
               <FaShoppingBag className="absolute top-3 left-2 transfrom-1/2  text-sm text-white " />
-              <span className="hidden md:flex absolute top-2 right-1 text-md bg-white text-[#FF3D71] rounded-full px-1.5 font-bold">1</span>
+              <span className="hidden md:flex absolute top-1.5 right-2 text-base  text-white  px-1.5 font-bold">1</span>
 
             </div>
           </div>
